@@ -8,7 +8,7 @@
    # Implement
    
   ```
-        mengNetwork.getInstance().newCall(GlobalVariable.getInstance().arData.get(0), GlobalVariable.getInstance().arData.get(1)+sharedPref.getString("id", FB_ID),new Callback(){
+        MengNetwork.getInstance().newCall(GlobalVariable.getInstance().arData.get(0), GlobalVariable.getInstance().arData.get(1)+sharedPref.getString("id", FB_ID),new Callback(){
 
             @Override
             public void onFailure(Call call, IOException e) {
