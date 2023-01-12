@@ -49,7 +49,7 @@ public class MengNetwork {
                 }
             }
         });
-        Log.e("test","test");
+
     }
 
 
