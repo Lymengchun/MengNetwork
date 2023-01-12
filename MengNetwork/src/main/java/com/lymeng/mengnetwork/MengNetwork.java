@@ -12,17 +12,17 @@ import okhttp3.Response;
 
 public class MengNetwork {
 
-//
-//    private static MengNetwork instance;
+
+    private static MengNetwork instance;
     private static OkHttpClient httpClient;
 
-//    public static MengNetwork getInstance(){
-//        if(instance==null){
-//            instance = new MengNetwork();
-//            httpClient = new OkHttpClient();
-//        }
-//        return instance;
-//    }
+    public static MengNetwork getInstance(){
+        if(instance==null){
+            instance = new MengNetwork();
+            httpClient = new OkHttpClient();
+        }
+        return instance;
+    }
 
     public OkHttpClient getHTTPClient(){
         return httpClient;
@@ -52,7 +52,5 @@ public class MengNetwork {
         Log.e("test","test");
     }
 
-    public String test(){
-        return "Hello world";
-    }
+
 }
